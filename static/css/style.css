@@ -1,7 +1,4 @@
-.ayurvati-pink {
-    color: #ffe1e7;
-}
-
 .navbar {
-    background-color: #ffe1e7;
+    background-color: rgb(255 241 242);
+    border-bottom: 2px solid red;
 }
