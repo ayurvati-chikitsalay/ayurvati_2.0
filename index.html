@@ -52,8 +52,28 @@
             </div>
         </div>
     </div>    <div id="hero" class="container mx-auto">
-        <div class="hidden md:flex flex-row justify-between my-10 gap-5">
-            <div id="contact_us_form" class="col-8">CONTACT US</div>
+        <div class="hidden md:flex flex-row justify-between my-10 gap-5 bg-gray-100">
+            <div id="whats_new" class="col-4 bg-blue-100">What's New?</div>
+            <div id="contact_us" class="col-8">
+                <div class="flex flex-col h-full items-center">
+                <p class="text-3xl text-rose-600">Contact us for free consultation</p>
+                <form id="appointment_form">
+                    <div class="grid grid-flow-row-dense gap-x-3 gap-y-5 place-items-center md:grid-cols-2 mr-5 mt-3">
+                        <input type="text" value="First Name"
+                            class="appearance-none block w-80 text-gray-400 border rounded py-2 px-3 focus:text-black hover:border-pink-700">
+                        <input type="text" value="Last Name"
+                            class="appearance-none block w-full text-gray-400 border rounded py-2 px-3 focus:text-black hover:border-pink-700">
+                        <input type="text" value="Mobile Number"
+                            class="appearance-none block w-full text-gray-400 border rounded py-2 px-3 focus:text-black hover:border-pink-700">
+                        <input type="text" value="Email ID"
+                            class="appearance-none block w-full text-gray-400 border rounded py-2 px-3 focus:text-black hover:border-pink-700">
+                        <textarea
+                            class="appearance-none block w-full text-gray-400 border rounded py-2 px-3 focus:text-black hover:border-pink-700 col-span-2">Description (optional)</textarea>
+                        <input type="submit" value="submit"
+                            class="mb-2 px-8 py-3 col-span-2 bg-rose-600 border-2 rounded-lg text-white text-xl hover:bg-rose-100 hover:border-rose-600 hover:border-2 hover:text-rose-600" />
+                    </div>
+                </form>
+            </div>        </div>
         </div>
     </div>    <div id="blogs" class="container mx-auto">
         <table class="table table-hover table-bordered border-primary">
