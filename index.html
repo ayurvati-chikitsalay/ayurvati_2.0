@@ -55,23 +55,55 @@
         <div class="hidden md:flex flex-row justify-between my-10 gap-5">
             <div id="whats_new" class="col-4">
                 <div id="carousel" class="container mx-auto bg-red-50">
-                <section class="">
-                    <div class="grid gap-8 lg:grid-cols-2">
-                        <div class="relative">
-                            <p>carousel main</p>
-                        </div>
+                <div class="relative">
+                    <div id="carousel_container" class="carousel flex overflow-hidden">
+            <div class="w-full h-full bg-blue-50 m-3">
+                <div class="flex flex-col">
+                    <p class="text-lg">1</p>
+                    <p class="text-xl">my awesome carousel slide number 1</p>
+                    <p class="text-xl">first slide sub title</p>
+                    <p class="text-xl">slide description</p>
+                </div>
+            </div>            <div class="w-full h-full bg-blue-50 m-3">
+                <div class="flex flex-col">
+                    <p class="text-lg">2</p>
+                    <p class="text-xl">my awesome carousel slide 2</p>
+                    <p class="text-xl">second slide sub title</p>
+                    <p class="text-xl">second slide description</p>
+                </div>
+            </div>            <div class="w-full h-full bg-blue-50 m-3">
+                <div class="flex flex-col">
+                    <p class="text-lg">3</p>
+                    <p class="text-xl">my awesome carousel slide 3</p>
+                    <p class="text-xl">third slide sub title</p>
+                    <p class="text-xl">third slide description</p>
+                </div>
+            </div>            <button id="carousel_left"
+                            class="animate-pulse left-arrow absolute top-1/2 left-4 transform -translate-y-1/2 hover:bg-gray-200 p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button id="carousel_right"
+                            class="animate-pulse right-arrow absolute top-1/2 right-4 transform -translate-y-1/2 hover:bg-gray-200 p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
                     </div>
-                </section>
+                </div>
             </div>        </div>
             <div id="contact_us" class="col-8">
                 <div class="flex flex-col h-full items-center">
                 <p class="text-3xl text-rose-600">Contact us for free consultation</p>
                 <form id="appointment_form">
-                    <div class="grid grid-flow-row-dense gap-x-3 gap-y-5 place-items-center md:grid-cols-2 mr-5 mt-3">
+                    <div class="grid grid-flow-row-dense gap-x-3 gap-y-5 place-items-center md:grid-cols-2 mt-3">
                         <input type="text" value="First Name"
                             class="appearance-none block w-80 text-gray-400 border rounded py-2 px-3 focus:text-black hover:border-pink-700">
                         <input type="text" value="Last Name"
-                            class="appearance-none block w-full text-gray-400 border rounded py-2 px-3 focus:text-black hover:border-pink-700">
+                            class="appearance-none block w-80 text-gray-400 border rounded py-2 px-3 focus:text-black hover:border-pink-700">
                         <input type="text" value="Mobile Number"
                             class="appearance-none block w-full text-gray-400 border rounded py-2 px-3 focus:text-black hover:border-pink-700">
                         <input type="text" value="Email ID"
@@ -85,15 +117,15 @@
             </div>        </div>
         </div>
     </div>    <div id="blogs" class="container mx-auto">
-        <table class="table table-hover table-bordered border-primary">
-            <thead class="table-dark">
+        <table class="table-auto">
+            <thead>
                 <tr>
                     <th scope="col">Blog ID</th>
                     <th scope="col">Blog Title</th>
                     <th scope="col">Blog Slug</th>
                 </tr>
             </thead>
-            <tbody class="table-group-divider">
+            <tbody>
             <tr>
                 <td>1</td>
                 <td>Blog 1</td>
